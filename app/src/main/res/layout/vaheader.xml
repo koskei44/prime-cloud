@@ -1,0 +1,413 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:padding="0dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:layout_weight=".5"
+            android:padding="16dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/primelogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Prime Cloud Accounting"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:layout_marginTop="0px"
+                android:layout_weight="12"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:textAlignment="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardViewKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/shopping" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Customers"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijewKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/shopping" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sales"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVikjewKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/moneybag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payments"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijelwKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/invoice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invoices"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijedsawKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/receipt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Receipt"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijedsakwKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+                <View style="@style/Divider.Vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijekdsakwKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+                <View style="@style/Divider.Vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijkkedsakwKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+                <View style="@style/Divider.Vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijledsakwKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+
+                <View style="@style/Divider.Vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijedsallkwKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View style="@style/Divider.Vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/cardVijeddssakwKBCtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="false"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:srcCompat="@drawable/money" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="8sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

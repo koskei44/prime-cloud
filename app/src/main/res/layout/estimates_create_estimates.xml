@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="@dimen/padding_small">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/ssCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="2dp"
+                    android:entries="@array/filterinquatotations"
+                    android:overlapAnchor="false"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_blue_button"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/createstimatesbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingBottom="10dp"
+                    android:background="@color/grey_300"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="6dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="80"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:fontFamily="@font/calibri"
+                                android:text="Create Quotations"
+                                android:textColor="#000000"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                app:srcCompat="@drawable/ic_baseline_add_chart_24" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/createstimatesbtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="58dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:background="@drawable/bg_blue_button"-->
+<!--                    android:text="Create Estimates"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    app:cornerRadius="8dp" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/quotaionlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#008000"
+        android:background="@color/white"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/grey_400" />
+</LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/grey_200"-->
+<!--    android:padding="@dimen/margin_normal"-->
+<!--    tools:context=".ui.views.activities.components.CreateRecordsActivity">-->
+
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/etDynamicEditxt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Estimates"-->
+<!--            android:textAlignment="textStart"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="@dimen/textsze"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_weight=".5"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:background="@drawable/bg_edit_text_gray"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:paddingStart="8dp"-->
+<!--                    android:paddingEnd="@dimen/padding_small">-->
+
+<!--                    <androidx.appcompat.widget.AppCompatSpinner-->
+<!--                        android:id="@+id/ssCurrency"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:layout_margin="2dp"-->
+<!--                        android:entries="@array/filterinquatotations"-->
+<!--                        android:overlapAnchor="false"-->
+<!--                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight=".5"-->
+<!--                android:orientation="vertical">-->
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/createstimatesbtn"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="58dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:background="@drawable/bg_blue_button"-->
+<!--                        android:text="Create Estimates"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        app:cornerRadius="8dp" />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <ListView-->
+<!--            android:id="@+id/pyrethrumUserlist"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:divider="#008000"-->
+<!--            android:background="@color/white"-->
+<!--            android:dividerHeight="1dp"-->
+<!--            android:listSelector="@color/grey_400" />-->
+<!--    </LinearLayout>-->
+<!--</ScrollView>-->

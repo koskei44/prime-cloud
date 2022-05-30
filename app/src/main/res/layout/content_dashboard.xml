@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.auth.ui.LoginActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:id="@+id/home_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_200"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="6px"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_baseline_notifications_24" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginRight="16px"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:srcCompat="@drawable/ic_baseline_monetization_on_24" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/red" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0px"
+                android:layout_marginTop="0px"
+                android:layout_marginRight="0px"
+                android:layout_marginBottom="400dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2px"
+                    android:layout_marginRight="2px"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViewCitizenTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/ic_invo" />
+
+                            <TextView
+                                android:id="@+id/etDynamicEditxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Invoice"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViewktntv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/moneybag" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Payments"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViewntvtv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/ic_money_bag_svgrepo_com" />
+
+                            <TextView
+                                android:id="@+id/etDynamicEditttt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Estimates"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViewK24Tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/ic_online_shop_svgrepo_com" />
+
+                            <TextView
+                                android:id="@+id/etDynamicEdik24txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Sales"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViewKBCtv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/shopping" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Customers"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViewtv47tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/bill" />
+
+                            <TextView
+                                android:id="@+id/etDynamiitttt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Receipt"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViefwCitizenTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/invoice" />
+
+                            <TextView
+                                android:id="@+id/etDynamicEssditxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Reports"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardfViewktntv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/moneybag" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Accounting"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/carddViewntvtv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/money" />
+
+                            <TextView
+                                android:id="@+id/etDynajmdicEditttt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="Payroll"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardiewK24Tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/ic_money" />
+
+                            <TextView
+                                android:id="@+id/etDynamicEdk24txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Banking"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardViewKfBCtv"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/ic_moneysvg2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tax Filing"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View style="@style/Divider.Vertical" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:id="@+id/cardVifewtv47tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="false"
+                                android:layout_marginLeft="10px"
+                                android:layout_marginRight="10px"
+                                android:clickable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                app:srcCompat="@drawable/ic_salees" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sales"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsze"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

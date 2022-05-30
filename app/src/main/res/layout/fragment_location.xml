@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context=".ui.views.activities.components.CreateRecordsActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="@dimen/padding_small">
+
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/ssCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:overlapAnchor="false"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+
+                    <com.pm.primeerp.util.CustomEditText
+                        android:id="@+id/etvajlue"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:background="@android:color/transparent"
+                        android:hint="Sl"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        app:font_name="regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Address"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+
+                    <com.pm.primeerp.util.CustomEditText
+                        android:id="@+id/etTelephoneNUmber"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:background="@android:color/transparent"
+                        android:hint="21 - Jamhuri Kenya"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        app:font_name="regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Onboarding.OnBoardingActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewPagerCountDots" />
+
+    <LinearLayout
+        android:id="@+id/viewPagerCountDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pager_height"
+        android:layout_above="@+id/ll_footer"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_get_started"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_blue_button"
+            android:text="@string/ob_get_started"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="4dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Prime Cloud Accounting</string>
+
+    <string name="text_sign_in_advantages">
+        When signed in:
+        \n\n&#8226; Your user data is available offline.
+        \n\n&#8226; You are able to manage your account.
+    </string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="login_phone_number">Enter Username</string>
+    <string name="login_pin">Enter Password</string>
+    <string name="url">http://212.71.245.25:9191/</string>
+
+    <string name="ob_header1">Prime Cloud</string>
+    <string name="ob_header2">get Started</string>
+    <string name="ob_header3">Welcome!!!</string>
+
+    <string name="ob_get_started">Get Started</string>
+
+    <string name="ob_desc1">An intergrated software for managing small businesses</string>
+    <string name="ob_desc2">Let’s get you started</string>
+    <string name="ob_desc3">Keep Track of your receipts,download and share statements</string>
+    <string name="proceed">Proceed</string>
+    <string name="select_role">Select Organization</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="add_products">Add Products</string>
+    <string name="save">Save</string>
+
+    <string-array name="products">
+        <item>Iphone</item>
+        <item>TV</item>
+        <item>Monitor</item>
+        <item>Desktop</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>-Select Currency-</item>
+        <item>Ksh</item>
+        <item>Usd</item>
+    </string-array>
+
+
+    <string-array name="filterinquatotations">
+        <item>-Select-</item>
+        <item>Date</item>
+        <item>Tax</item>
+    </string-array>
+
+    <string-array name="financialyear">
+        <item>Financial year</item>
+        <item>Monthly</item>
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string name="name">Name</string>
+    <string name="logo">Logo</string>
+    <string name="location">Location</string>
+    <string name="stadium">Stadium</string>
+    <string name="league">League</string>
+    <string name="coach">Coach</string>
+    <string name="star">Star</string>
+
+    <string name="hint_search">Search by Club Name</string>
+    <string name="action_search">Search</string>
+</resources>
